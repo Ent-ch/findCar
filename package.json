@@ -1,0 +1,61 @@
+{
+  "name": "findcar",
+  "version": "1.0.0",
+  "description": "images recognition",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "iconv": "^2.3.2",
+    "iconv-lite": "^0.4.24",
+    "inferno": "^7",
+    "inferno-component": "^7",
+    "inferno-router": "^7",
+    "jimp": "^0.6.0",
+    "knex": "^0.15.2",
+    "multer": "^1.4.1",
+    "node-autodetect-utf8-cp1251-cp866": "^0.1.0",
+    "request": "^2.88.0",
+    "sqlite3": "^4.0.3",
+    "surface": "https://github.com/mildrenben/surface.git"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "7",
+    "babel-plugin-inferno": "^5.1.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "live-server": "^1.2.1",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.9.4",
+    "nodemon": "^1.18.4",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "start-ui": "start /min live-server --open=docs --watch=docs && npm run watch",
+    "start": "npm run migrate && node index.js",
+    "dev": "start /min npm run watch && nodemon index.js",
+    "migrate": "knex migrate:latest --env production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ent-ch/"
+  },
+  "keywords": [
+    "Inferno"
+  ],
+  "author": "RVM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ent-ch/"
+  },
+  "homepage": "https://github.com/Ent-ch/"
+}

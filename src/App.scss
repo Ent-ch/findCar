@@ -1,0 +1,66 @@
+$cBlockWidth: 130px;
+
+html, body {
+    height: 100%;
+}
+
+#app {
+    width: 100%;
+}
+
+.appMain {
+    height: 100%;
+    // background-image: url('../img/fireBk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+footer.g--12 {
+    margin-bottom: 0;
+}
+
+.sendBlock {
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    width: $cBlockWidth;
+}
+
+.btn-big {
+    height: $cBlockWidth;
+    width: $cBlockWidth;
+}
+
+.user-img {
+    width: 300px
+}
+
+.btn-send {
+    margin-top: 15px;
+    margin-left: 100px;
+}
+
+.list-img {
+    height: 100px;
+    width: auto;
+}
+
+.btn-lates {
+    width: $cBlockWidth;
+    margin-top: 30px;
+}
+
+.detail-page {
+    height: 100%;
+
+    footer {
+        position: sticky;
+    }
+}
